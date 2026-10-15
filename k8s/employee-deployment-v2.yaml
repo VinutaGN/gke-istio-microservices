@@ -5,18 +5,18 @@ metadata:
   name: employee-service-v2
   namespace: microservices
   labels:
-    app: employee-service-2
+    app: employee-service
     version: v2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: employee-service-2
+      app: employee-service
       version: v2
   template:
     metadata:
       labels:
-        app: employee-service-2
+        app: employee-service
         version: v2
     spec:
       containers:
