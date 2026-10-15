@@ -5,7 +5,7 @@ metadata:
   name: employee-service
   namespace: microservices
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: employee-service
