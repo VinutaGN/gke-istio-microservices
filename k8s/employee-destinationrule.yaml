@@ -12,5 +12,5 @@ spec:
         app: employee-service
     - name: v2
       labels:
-        app: employee-service-2
+        app: employee-service
         version: v2
