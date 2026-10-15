@@ -7,7 +7,7 @@ metadata:
 spec:
   type: ClusterIP
   selector:
-    app: employee-service
+    app: employee-service-2
     version: v2
   ports:
     - name: http
