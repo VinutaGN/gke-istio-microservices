@@ -1,0 +1,16 @@
+
+apiVersion: networking.istio.io/v1
+kind: DestinationRule
+metadata:
+  name: employee-destination
+  namespace: microservices
+spec:
+  host: employee-service.microservices.svc.cluster.local
+  subsets:
+    - name: v1
+      labels:
+        app: employee-service
+    - name: v2
+      labels:
+        app: employee-service
+        version: v2
