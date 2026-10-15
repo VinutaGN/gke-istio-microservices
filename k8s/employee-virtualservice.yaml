@@ -1,0 +1,17 @@
+
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: employee-virtualservice
+  namespace: microservices
+spec:
+  hosts:
+    - "*"
+  gateways:
+    - employee-gateway
+  http:
+    - route:
+        - destination:
+            host: employee-service.microservices.svc.cluster.local
+            port:
+              number: 80
