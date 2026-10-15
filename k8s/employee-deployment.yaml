@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         app: employee-service
+        version: v1
     spec:
       containers:
         - name: nginx
